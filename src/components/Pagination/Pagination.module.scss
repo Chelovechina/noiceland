@@ -1,0 +1,62 @@
+@import "./../../scss/_variables";
+
+.root {
+  margin: 30px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  flex-wrap: wrap;
+  list-style: none;
+  padding: 0 10px;
+}
+.page,
+.previous,
+.next {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5px 10px;
+  border: 2px solid $dark;
+  background-color: $white;
+  font-size: 18px;
+  color: $dark;
+  font-weight: 800;
+  cursor: pointer;
+  box-shadow: 0 0 2px $dark;
+
+  @media (max-width: 500px) {
+    font-size: 16px;
+  }
+}
+
+.page {
+  &.active {
+    color: $white;
+    background-color: $dark;
+  }
+}
+
+.previous,
+.next {
+  &.disabled {
+    border: 2px solid $gray;
+    box-shadow: 0 0 2px $gray;
+    color: $gray;
+  }
+}
+
+@media (max-width: 1200px) {
+  .page,
+  .previous,
+  .next {
+    font-size: 16px;
+  }
+}
+@media (max-width: 680px) {
+  .page,
+  .previous,
+  .next {
+    font-size: 14px;
+  }
+}

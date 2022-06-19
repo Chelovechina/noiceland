@@ -1,0 +1,25 @@
+@import "./../../scss/variables";
+
+.header {
+  background-color: #fff;
+  padding: 20px;
+  box-shadow: 0 0 5px $dark;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 11;
+}
+.wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+@media (max-width: 680px) {
+  .header {
+    padding: 15px;
+  }
+  .logo {
+    width: 100px;
+  }
+}

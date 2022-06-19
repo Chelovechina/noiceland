@@ -1,0 +1,16 @@
+// font-family: 'Montserrat Alternates', sans-serif;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+  font-weight: normal;
+}
+.wrapper {
+  padding-top: 100px;
+  min-height: 90vh;
+}
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
